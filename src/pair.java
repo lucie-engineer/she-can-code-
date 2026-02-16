@@ -28,5 +28,8 @@ public class pair<K, V> {
     public int hashCode() {
         return java.util.Objects.hash(key, value);
     }
+    public static <K, V> pair<K, V> create(K key, V value) {
+        return new pair<>(key, value);
+    }
 
 }
